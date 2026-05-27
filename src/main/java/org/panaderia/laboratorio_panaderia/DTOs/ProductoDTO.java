@@ -16,5 +16,4 @@ public class ProductoDTO {
     private BigDecimal precio;
     private Integer stock;
     private Boolean estado;
-    private Integer stock;
 }
