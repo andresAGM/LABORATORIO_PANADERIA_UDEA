@@ -27,6 +27,7 @@ public class ProductoService {
                 .nombre(dto.getNombre())
                 .precio(dto.getPrecio())
                 .stock(dto.getStock())
+                .categoria(dto.getCategoria())
                 .estado(dto.getEstado())
                 .build();
 
@@ -39,6 +40,7 @@ public class ProductoService {
                 .nombre(productoGuardado.getNombre())
                 .precio(productoGuardado.getPrecio())
                 .stock(productoGuardado.getStock())
+                .categoria(productoGuardado.getCategoria())
                 .estado(productoGuardado.getEstado())
                 .build();
     }
@@ -54,6 +56,7 @@ public class ProductoService {
                         .nombre(producto.getNombre())
                         .precio(producto.getPrecio())
                         .stock(producto.getStock())
+                        .categoria(producto.getCategoria())
                         .estado(producto.getEstado())
                         .build())
                 .collect(Collectors.toList());
@@ -73,6 +76,7 @@ public class ProductoService {
                 .precio(producto.getPrecio())
                 .stock(producto.getStock())
                 .estado(producto.getEstado())
+                .categoria(producto.getCategoria())
                 .build();
     }
 }
