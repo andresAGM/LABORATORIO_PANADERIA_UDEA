@@ -26,5 +26,8 @@ public class Producto {
 
     @Column(nullable = false)
     private Boolean estado; // Representa si está Activo (true) o Inactivo (false)
+
+    @Column(nullable = false)
+    private Integer stock; // Cantidad disponible en el inventario de la panadería
 }
 

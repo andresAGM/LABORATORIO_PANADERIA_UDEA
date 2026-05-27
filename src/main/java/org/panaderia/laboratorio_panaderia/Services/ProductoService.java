@@ -27,6 +27,7 @@ public class ProductoService {
                 .nombre(dto.getNombre())
                 .precio(dto.getPrecio())
                 .estado(dto.getEstado())
+                .stock(dto.getStock())
                 .build();
 
         // 2. Guardar la entidad en MySQL
@@ -38,6 +39,7 @@ public class ProductoService {
                 .nombre(productoGuardado.getNombre())
                 .precio(productoGuardado.getPrecio())
                 .estado(productoGuardado.getEstado())
+                .stock(productoGuardado.getStock())
                 .build();
     }
 
@@ -52,6 +54,7 @@ public class ProductoService {
                         .nombre(producto.getNombre())
                         .precio(producto.getPrecio())
                         .estado(producto.getEstado())
+                        .stock(producto.getStock())
                         .build())
                 .collect(Collectors.toList());
     }
@@ -69,6 +72,7 @@ public class ProductoService {
                 .nombre(producto.getNombre())
                 .precio(producto.getPrecio())
                 .estado(producto.getEstado())
+                .stock(producto.getStock())
                 .build();
     }
 }
