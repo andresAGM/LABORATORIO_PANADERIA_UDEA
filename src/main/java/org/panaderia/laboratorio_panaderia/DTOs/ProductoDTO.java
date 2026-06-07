@@ -28,8 +28,9 @@ public class ProductoDTO {
     @PositiveOrZero(message = "El stock debe ser mayor o igual a cero")
     private Integer stock;
 
-    @NotBlank(message = "La categoría no puede estar vacía")
-    private String categoria;
+    // VALIDACIÓN NUEVA: Validamos que nos manden el ID de la categoría asociada
+    @NotNull(message = "El ID de la categoría es obligatorio")
+    private Long categoriaId;
 
     private Boolean estado = true; // nace activo
 }
